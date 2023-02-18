@@ -21,7 +21,7 @@ const EmployeeList = () => {
                 <div className="flex flex-col space-y-4">
                     {
                         employees.map(employee => (
-                            <EmployeeCard employee={employee} />
+                            <EmployeeCard employee={employee} key={employee.id}/>
                         ))
                     }
                 </div>

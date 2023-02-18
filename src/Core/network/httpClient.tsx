@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { injectable, singleton } from 'tsyringe';
+import { injectable } from 'tsyringe';
 
 export interface IHttpClient {
     get: (url: string) => Promise<Response>,
@@ -18,9 +18,3 @@ export class AxiosClient implements IHttpClient {
         return response.data
     }
 }
-
-// export class FetchClient implements IHttpClient {
-//     async get(url: string) {
-//         return await fetch(url)
-//     }
-// }

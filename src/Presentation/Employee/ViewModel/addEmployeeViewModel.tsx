@@ -1,4 +1,3 @@
-import Employee from "Domain/entities/employee"
 import AddEmployee from "Domain/usecases/addEmployee"
 import { FormEvent, useState } from "react"
 import { container } from "tsyringe"
