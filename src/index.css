@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+p {
+    @apply text-slate-600
+}
+
+.container {
+    @apply mx-auto max-w-screen-lg p-4
+}
+
+.btn {
+    @apply bg-teal-600 text-sm text-white py-2 px-4 rounded-md
+}
+
+.form-control {
+    @apply p-3 rounded-md outline-none border w-full focus:border-sky-500 duration-200
+}
